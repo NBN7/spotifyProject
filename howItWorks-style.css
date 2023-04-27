@@ -1,0 +1,77 @@
+:root {
+  --body-background: rgb(40, 40, 40);
+  --box-background: rgb(30, 30, 30);
+  --green: #1ab26b;
+  --light-green: #1fd580;
+  --soft-white: rgb(250, 243, 230);
+}
+
+@font-face {
+  font-family: Apple Semibold;
+  src: url(Fonts/FontsFree-Net-SFProDisplay-Semibold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Apple Semibold;
+}
+
+body {
+  background-color: var(--body-background);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+.box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box-background);
+  height: 31.25rem;
+  width: 65rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+.box h1 {
+  position: absolute;
+  top: 1rem;
+  color: var(--green);
+}
+.steps {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+.step {
+  color: var(--light-green);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+/* border: 2px solid var(--green);
+border-radius: 0.75rem; */
+  padding: 0.75rem;
+}
+.title {
+  margin-bottom: 1rem;
+}
+.step p {
+  color: var(--soft-white);
+}
+.color {
+  color: var(--soft-white);
+  text-decoration: none;
+  transition: all .2s;
+}
+.color:hover{
+  color: var(--light-green);
+  text-decoration: underline;
+}

@@ -1,0 +1,98 @@
+:root {
+  --body-background: rgb(40, 40, 40);
+  --box-background: rgb(30, 30, 30);
+  --green: #1ab26b;
+  --light-green: #1fd580;
+  --soft-white: rgb(250, 243, 230);
+  --grey: rgba(255, 255, 255, 0.5);
+}
+
+@font-face {
+  font-family: Apple Semibold;
+  src: url(Fonts/FontsFree-Net-SFProDisplay-Semibold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Apple Semibold;
+}
+
+body {
+  background-color: var(--body-background);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+.box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--box-background);
+  height: 31.25rem;
+  width: 31.25rem;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.box img {
+  top: 2rem;
+  width: 15rem;
+  position: absolute;
+}
+.url {
+  width: 9.375rem;
+  height: 1.563rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--green);
+  color: var(--green);
+  font-size: 15px;
+  transition: all .3s;
+}
+.url:focus {
+  outline: none;
+  border-bottom: 1px solid var(--light-green);
+  color: var(--grey);
+}
+.url::placeholder {
+  color: var(--grey);
+  transition: all 0.3s;
+}
+.url:focus::placeholder {
+  opacity: 0;
+}
+.btn {
+  margin-top: 1.25rem;
+  width: 9.375rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  color: rgb(30, 30, 30);
+  background-color: var(--green);
+  cursor: pointer;
+  transition: all .4s;
+}
+.btn:hover {
+  background-color: var(--light-green);
+}
+.how {
+  margin-top: 1.55rem;
+  color: var(--grey);
+  cursor: pointer;
+  transition: all .3s;
+  text-decoration: none;
+}
+.how:hover {
+  color: var(--light-green);
+}
+.mini {
+  font-size: 0.875rem;
+}
